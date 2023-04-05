@@ -6,6 +6,7 @@
 import Move from "./lib/Move.svelte";
     import Bets from "./lib/Bets.svelte";
     import Settings from "./lib/Settings.svelte";
+    import Balance from "./lib/Balance.svelte";
 
   
 
@@ -18,7 +19,7 @@ import Move from "./lib/Move.svelte";
 
 <main>
   <div class="parent">
-  <div class="div1"><Settings></Settings></div>
+  <div class="div1"><Balance></Balance><Settings></Settings></div>
   <div class="div2"><Nav></Nav> </div>
   <div class="div3"> </div>
   <div class="div4"><Bets></Bets> </div>
@@ -43,12 +44,11 @@ import Move from "./lib/Move.svelte";
 </main>
 
 <style>
-  @import url("https://unpkg.com/chota@latest");
-  main {
-background-color:#000000;
-      
-    
-  }
+  @import url("../public/chota.css");
+main {
+
+background-color:grey;
+}
   .parent {
     display: grid;
       

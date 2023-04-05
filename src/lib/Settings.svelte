@@ -1,11 +1,15 @@
 <script>
  import { Modal, Button, Card } from 'svelte-chota';
+ import { writable } from 'svelte/store';
 
  import { mdiCog, mdiClose } from '@mdi/js';
 
-var ServerSeed = 'test';
-var ClientSeed = 'test';
-var nonce = 1;
+export var ServerSeed = 'test';
+export var ClientSeed = 'test';
+export var nonce = 1;
+
+    
+
 
 
     

@@ -6,7 +6,7 @@ import {writable, readable} from 'svelte/store';
 
 var verify = [];
 var endresult2 = 0;
-var endresult_dice = writable('');
+var endresult_dice = writable('0');
     
 verify = generateFloats($BetObject);
 $: verify = generateFloats($BetObject);   
@@ -31,7 +31,7 @@ $: verify = generateFloats($BetObject);
 
 
 export function bet_dice() {
- let endresult = verify[0] * 10001;
+ endresult = verify[0] * 10001;
       endresult2 = Math.trunc(endresult) / 100;
       console.log(endresult2);
     let endresult3 = endresult2.toString;
